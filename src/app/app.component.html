@@ -318,7 +318,11 @@
 <div class="content" role="main">
   <h1>{{ title }}</h1>
   <div class="card-container">
-    <app-heroes></app-heroes>
+    <nav>
+      <a routerLink="/dashboard">Dashboard</a>
+      <a routerLink="/heroes">Heroes</a>
+    </nav>
+    <router-outlet></router-outlet>
     <app-messages></app-messages>
   </div>
   <footer>
@@ -327,4 +331,4 @@
 
 </div>
 
-<router-outlet></router-outlet>
+
